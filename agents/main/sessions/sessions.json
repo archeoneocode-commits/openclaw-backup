@@ -1,10 +1,10 @@
 {
   "agent:main:main": {
     "sessionId": "fad751fa-87be-49aa-a9a0-034a5bbc985e",
-    "updatedAt": 1770484173850,
+    "updatedAt": 1770486812166,
     "systemSent": true,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/home/archeo/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "github"
@@ -23,9 +23,9 @@
         {
           "name": "github",
           "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-          "filePath": "/home/archeo/.openclaw/workspace/skills/github/SKILL.md",
-          "baseDir": "/home/archeo/.openclaw/workspace/skills/github",
-          "source": "openclaw-workspace",
+          "filePath": "/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/home/archeo/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
         {
@@ -53,7 +53,7 @@
           "disableModelInvocation": false
         }
       ],
-      "version": 1770473013984
+      "version": 1770484206810
     },
     "deliveryContext": {
       "channel": "webchat",
@@ -69,7 +69,7 @@
     "contextTokens": 131072,
     "abortedLastRun": false,
     "inputTokens": 4096,
-    "outputTokens": 463,
+    "outputTokens": 275,
     "totalTokens": 4096,
     "chatType": "direct",
     "origin": {
@@ -84,7 +84,7 @@
     "sessionFile": "/home/archeo/.openclaw/agents/main/sessions/fad751fa-87be-49aa-a9a0-034a5bbc985e.jsonl",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1770483910101,
+      "generatedAt": 1770486782394,
       "sessionId": "fad751fa-87be-49aa-a9a0-034a5bbc985e",
       "sessionKey": "agent:main:main",
       "provider": "ollama",
@@ -96,9 +96,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 24161,
+        "chars": 23873,
         "projectContextChars": 13368,
-        "nonProjectContextChars": 10793
+        "nonProjectContextChars": 10505
       },
       "injectedWorkspaceFiles": [
         {
@@ -159,11 +159,11 @@
         }
       ],
       "skills": {
-        "promptChars": 1757,
+        "promptChars": 1791,
         "entries": [
           {
             "name": "github",
-            "blockChars": 291
+            "blockChars": 325
           },
           {
             "name": "healthcheck",
@@ -239,7 +239,7 @@
           },
           {
             "name": "message",
-            "summaryChars": 118,
+            "summaryChars": 110,
             "schemaChars": 3921,
             "propertiesCount": 84
           },
