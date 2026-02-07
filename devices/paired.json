@@ -1,0 +1,65 @@
+{
+  "c8560f574e81f5f655baa9395a72d96b0b8181b1aaa6ae1f257d4df80ab43e6c": {
+    "deviceId": "c8560f574e81f5f655baa9395a72d96b0b8181b1aaa6ae1f257d4df80ab43e6c",
+    "publicKey": "XH4lPcoXyCt7cWtQbXxG5xnO79lSEcnxuQ4AmUEDyd0",
+    "platform": "linux",
+    "clientId": "gateway-client",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "698095030dc64e25a0a26529c7a0ab3b",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1770437265585,
+        "lastUsedAtMs": 1770483696317
+      }
+    },
+    "createdAtMs": 1770437265585,
+    "approvedAtMs": 1770437265585,
+    "displayName": "openclaw-tui"
+  },
+  "baa62baf33bcf46b55b767d098f46d6fc054dc2b666b3374475644f3e86d6424": {
+    "deviceId": "baa62baf33bcf46b55b767d098f46d6fc054dc2b666b3374475644f3e86d6424",
+    "publicKey": "SsTIWvEAxcrhQ6Tl3iGBQ1Xd7-PssEx4Q6h_fcfRm-o",
+    "platform": "Linux x86_64",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "9faccb553c5b453190266c87325099c4",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1770471715874,
+        "lastUsedAtMs": 1770473560627
+      }
+    },
+    "createdAtMs": 1770471715874,
+    "approvedAtMs": 1770471715874
+  }
+}

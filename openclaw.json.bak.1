@@ -1,0 +1,110 @@
+{
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama-local",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3:8b",
+            "name": "qwen3:8b",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 16384
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 16384
+          },
+          {
+            "id": "qwen2.5-coder:7b-instruct-q4_K_M",
+            "name": "qwen2.5-coder:7b-instruct-q4_K_M",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 16384
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/qwen3:8b"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "workspace": "/home/archeo/.openclaw/workspace"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "8c0518b99651787ff2892b7d0342e73c5a53e03ca5115f74"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8577610400:AAFsKcvaO8wZf-TM14Th0iVV8f_Q1fSo2Ec"
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.2.3-1",
+    "lastTouchedAt": "2026-02-07T04:07:19.388Z"
+  }
+}

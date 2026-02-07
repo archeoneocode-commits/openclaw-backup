@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "/home/archeo/.openclaw/exec-approvals.sock",
+    "token": "jTTRe2xZ9QqUVv5hUIL4UfM6wx5xB0wS"
+  },
+  "defaults": {},
+  "agents": {}
+}

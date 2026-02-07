@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.3-1",
+    "lastTouchedAt": "2026-02-07T14:12:37.667Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-07T14:12:37.662Z",
+    "lastRunVersion": "2026.2.3-1",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama-local",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3:8b",
+            "name": "qwen3:8b",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 16384
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 16384
+          },
+          {
+            "id": "qwen2.5-coder:7b-instruct-q4_K_M",
+            "name": "qwen2.5-coder:7b-instruct-q4_K_M",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 16384
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/qwen3:8b"
+      },
+      "workspace": "/home/archeo/.openclaw/workspace",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions",
+    "tts": {
+      "auto": "off"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8577610400:AAFsKcvaO8wZf-TM14Th0iVV8f_Q1fSo2Ec",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "8c0518b99651787ff2892b7d0342e73c5a53e03ca5115f74"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  }
+}

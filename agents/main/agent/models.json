@@ -1,0 +1,59 @@
+{
+  "providers": {
+    "ollama": {
+      "baseUrl": "http://127.0.0.1:11434/v1",
+      "apiKey": "ollama-local",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "qwen3:8b",
+          "name": "qwen3:8b",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        },
+        {
+          "id": "qwen3-coder-next",
+          "name": "qwen3-coder-next",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        },
+        {
+          "id": "qwen2.5-coder:7b-instruct-q4_K_M",
+          "name": "qwen2.5-coder:7b-instruct-q4_K_M",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        }
+      ]
+    }
+  }
+}
